@@ -32,20 +32,11 @@
                       <h1>Register to Game Over</h1>
                     </header>
                     <form class="row g-3 my-4" id="register">
-                      <div class="col-md-6">
+                      <div class="col-12">
                           <div class="form-data">
-                            <input type="text" id="firstName" class="form-control" placeholder="First Name" />
+                            <input type="text" id="name" class="form-control" placeholder="name" />
                             <ul class="alert alert-danger p-0 invalid-feedback">
-                                <li>First Name Is Required</li>
-                                <li>Minmum Length 2 and Maxmum 20</li>
-                            </ul>
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="form-data">
-                            <input type="text" id="lastName" class="form-control" placeholder="Last Name" />
-                            <ul class="alert alert-danger p-0 invalid-feedback">
-                                <li>Last Name Is Required</li>
+                                <li>Name Is Required</li>
                                 <li>Minmum Length 2 and Maxmum 20</li>
                             </ul>
                           </div>
@@ -70,10 +61,19 @@
                       </div>
                       <div class="col-12">
                           <div class="form-data">
-                            <input type="number" id="age" class="form-control" placeholder="Enter Age" />
+                            <input type="password" id="rePassword" class="form-control" placeholder="rePassword" />
                             <ul class="alert alert-danger p-0 invalid-feedback">
-                                <li>Age Is Required</li>
-                                <li>Minimum 10 Maxmum 80</li>
+                                <li>rePassword Is Required</li>
+                                <li>Minimum eight characters, at least one letter and one number</li>
+                            </ul>
+                          </div>
+                      </div>
+                      <div class="col-12">
+                          <div class="form-data">
+                            <input type="tel" id="phone" class="form-control" placeholder="phone" />
+                            <ul class="alert alert-danger p-0 invalid-feedback">
+                                <li>Phone Is Required</li>
+                                <li>accept only egypt phones</li>
                             </ul>
                           </div>
                       </div>

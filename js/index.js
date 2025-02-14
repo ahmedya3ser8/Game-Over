@@ -53,7 +53,7 @@ async function setForm() {
 async function loginApi(data) {
   loginBtn.setAttribute('disabled', true);
   try {
-    const api = await fetch('https://movies-api.routemisr.com/signin', {
+    const api = await fetch('https://ecommerce.routemisr.com/api/v1/auth/signin', {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
@@ -62,11 +62,12 @@ async function loginApi(data) {
       }
     });
     const response = await api.json();
+    console.log(response);
     loginBtn.removeAttribute('disabled');
     return response;
   } catch (err) {
     loginBtn.removeAttribute('disabled');
-    console.log(err.message);
+    console.log(err);
   }
 }
 
